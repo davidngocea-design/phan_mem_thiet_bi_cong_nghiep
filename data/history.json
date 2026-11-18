@@ -1,0 +1,22 @@
+[
+  {
+    "Thời gian": "18/11/2026 17:33:40",
+    "Tên bài toán": "Module 1 (Tab 1) - Bù công suất phản kháng",
+    "Thông số đầu vào": {
+      "Công suất tác dụng P": "50.0 kW",
+      "Điện áp lưới U": "220.0 V (50 Hz)",
+      "Hệ số cosφ trước -> sau bù": "0.7 -> 0.95"
+    },
+    "Kết quả tính toán": {
+      "Dòng điện tải 1 pha trước bù (I1)": "324.68 A",
+      "Công suất biểu kiến (S1) / Phản kháng (Q1)": "S1 = 71.43 kVA  |  Q1 = 51.01 kVAR",
+      "Dung lượng phản kháng cần bù (Qc)": "34.58 kVAR",
+      "Điện dung tụ bù tương đương (C)": "2273.94 µF",
+      "Dòng điện định mức của nhánh tụ (Ic)": "181.82 A"
+    },
+    "Đề xuất thiết bị công nghiệp": {
+      "Tụ bù công suất phản kháng": "Tụ bù công nghiệp 40 kVAR (Yêu cầu tính toán: 34.58 kVAR)",
+      "Aptomat bảo vệ nhánh tụ bù": "Aptomat MCCB 315 A (Chọn theo hệ số 1.5 × Itụ = 272.7 A)"
+    }
+  }
+]

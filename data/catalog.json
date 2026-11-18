@@ -1,0 +1,233 @@
+{
+  "mcb_ratings_a": [
+    6,
+    10,
+    16,
+    20,
+    25,
+    32,
+    40,
+    50,
+    63,
+    80,
+    100,
+    125
+  ],
+  "mcb_icu_ka": [
+    4.5,
+    6.0,
+    10.0,
+    15.0,
+    25.0,
+    36.0,
+    50.0
+  ],
+  "mccb_ratings_a": [
+    16,
+    20,
+    25,
+    32,
+    40,
+    50,
+    63,
+    80,
+    100,
+    125,
+    160,
+    200,
+    250,
+    315,
+    400,
+    500,
+    630
+  ],
+  "contactors": [
+    {
+      "code": "LC1D09 (9A)",
+      "rated_a": 9
+    },
+    {
+      "code": "LC1D12 (12A)",
+      "rated_a": 12
+    },
+    {
+      "code": "LC1D18 (18A)",
+      "rated_a": 18
+    },
+    {
+      "code": "LC1D25 (25A)",
+      "rated_a": 25
+    },
+    {
+      "code": "LC1D32 (32A)",
+      "rated_a": 32
+    },
+    {
+      "code": "LC1D40 (40A)",
+      "rated_a": 40
+    },
+    {
+      "code": "LC1D50 (50A)",
+      "rated_a": 50
+    },
+    {
+      "code": "LC1D65 (65A)",
+      "rated_a": 65
+    },
+    {
+      "code": "LC1D80 (80A)",
+      "rated_a": 80
+    },
+    {
+      "code": "LC1D95 (95A)",
+      "rated_a": 95
+    }
+  ],
+  "thermal_relays": [
+    {
+      "code": "LRD08 (2.5 - 4A)",
+      "min_a": 2.5,
+      "max_a": 4.0
+    },
+    {
+      "code": "LRD10 (4 - 6A)",
+      "min_a": 4.0,
+      "max_a": 6.0
+    },
+    {
+      "code": "LRD12 (5.5 - 8A)",
+      "min_a": 5.5,
+      "max_a": 8.0
+    },
+    {
+      "code": "LRD14 (7 - 10A)",
+      "min_a": 7.0,
+      "max_a": 10.0
+    },
+    {
+      "code": "LRD16 (9 - 13A)",
+      "min_a": 9.0,
+      "max_a": 13.0
+    },
+    {
+      "code": "LRD21 (12 - 18A)",
+      "min_a": 12.0,
+      "max_a": 18.0
+    },
+    {
+      "code": "LRD22 (16 - 24A)",
+      "min_a": 16.0,
+      "max_a": 24.0
+    },
+    {
+      "code": "LRD32 (23 - 32A)",
+      "min_a": 23.0,
+      "max_a": 32.0
+    },
+    {
+      "code": "LRD35 (30 - 38A)",
+      "min_a": 30.0,
+      "max_a": 38.0
+    },
+    {
+      "code": "LRD365 (48 - 65A)",
+      "min_a": 48.0,
+      "max_a": 65.0
+    },
+    {
+      "code": "LRD3365 (63 - 80A)",
+      "min_a": 63.0,
+      "max_a": 80.0
+    }
+  ],
+  "capacitors_kvar": [
+    5,
+    10,
+    15,
+    20,
+    25,
+    30,
+    40,
+    50,
+    60,
+    75,
+    100
+  ],
+  "cables": [
+    {
+      "section_mm2": 1.5,
+      "cu_ampacity_a": 18,
+      "al_ampacity_a": 14
+    },
+    {
+      "section_mm2": 2.5,
+      "cu_ampacity_a": 25,
+      "al_ampacity_a": 19
+    },
+    {
+      "section_mm2": 4.0,
+      "cu_ampacity_a": 34,
+      "al_ampacity_a": 26
+    },
+    {
+      "section_mm2": 6.0,
+      "cu_ampacity_a": 44,
+      "al_ampacity_a": 34
+    },
+    {
+      "section_mm2": 10.0,
+      "cu_ampacity_a": 61,
+      "al_ampacity_a": 47
+    },
+    {
+      "section_mm2": 16.0,
+      "cu_ampacity_a": 82,
+      "al_ampacity_a": 63
+    },
+    {
+      "section_mm2": 25.0,
+      "cu_ampacity_a": 108,
+      "al_ampacity_a": 83
+    },
+    {
+      "section_mm2": 35.0,
+      "cu_ampacity_a": 134,
+      "al_ampacity_a": 103
+    },
+    {
+      "section_mm2": 50.0,
+      "cu_ampacity_a": 167,
+      "al_ampacity_a": 128
+    },
+    {
+      "section_mm2": 70.0,
+      "cu_ampacity_a": 207,
+      "al_ampacity_a": 159
+    },
+    {
+      "section_mm2": 95.0,
+      "cu_ampacity_a": 251,
+      "al_ampacity_a": 193
+    },
+    {
+      "section_mm2": 120.0,
+      "cu_ampacity_a": 292,
+      "al_ampacity_a": 224
+    },
+    {
+      "section_mm2": 150.0,
+      "cu_ampacity_a": 335,
+      "al_ampacity_a": 257
+    },
+    {
+      "section_mm2": 185.0,
+      "cu_ampacity_a": 382,
+      "al_ampacity_a": 294
+    },
+    {
+      "section_mm2": 240.0,
+      "cu_ampacity_a": 453,
+      "al_ampacity_a": 348
+    }
+  ]
+}
