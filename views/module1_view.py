@@ -1,8 +1,8 @@
 """
 File: views/module1_view.py
 Chức năng: Giao diện MODULE 1 - TÍNH TOÁN PHỤ TẢI CÔNG NGHIỆP (Gồm đúng 2 Tab):
-  - Tab 1 (Thành viên 1): Mạch 1 Pha & Đề xuất Tụ Bù cosφ
-  - Tab 2 (Thành viên 2): Động Cơ Không Đồng Bộ 3 Pha & Đề xuất Khởi Động Từ
+  - Mạch 1 Pha & Đề xuất Tụ Bù cosφ
+  - Động Cơ Không Đồng Bộ 3 Pha & Đề xuất Khởi Động Từ
 """
 
 import tkinter as tk
@@ -28,7 +28,7 @@ class Module1PhuTaiView(ttk.Frame):
     def tao_giao_dien(self):
         lbl_title = tk.Label(
             self,
-            text="MODULE 1: TÍNH TOÁN PHỤ TẢI & ĐỀ XUẤT THIẾT BỊ ĐIỀU KHIỂN - BÙ CÔNG SUẤT",
+            text="TÍNH TOÁN PHỤ TẢI & ĐỀ XUẤT THIẾT BỊ ĐIỀU KHIỂN - BÙ CÔNG SUẤT",
             font=("Arial", 12, "bold"), fg="#0f172a"
         )
         lbl_title.pack(anchor="w", padx=12, pady=(10, 6))
@@ -39,8 +39,8 @@ class Module1PhuTaiView(ttk.Frame):
         self.tab1 = ttk.Frame(self.notebook, padding=12)
         self.tab2 = ttk.Frame(self.notebook, padding=12)
 
-        self.notebook.add(self.tab1, text=" Tab 1 (TV1): Phụ Tải 1 Pha & Đề Xuất Tụ Bù cosφ ")
-        self.notebook.add(self.tab2, text=" Tab 2 (TV2): Động Cơ KĐB 3 Pha & Đề Xuất Khởi Động Từ ")
+        self.notebook.add(self.tab1, text=" Phụ Tải 1 Pha & Đề Xuất Tụ Bù cosφ ")
+        self.notebook.add(self.tab2, text=" Động Cơ KĐB 3 Pha & Đề Xuất Khởi Động Từ ")
 
         self.dung_tab_1()
         self.dung_tab_2()
@@ -153,7 +153,7 @@ class Module1PhuTaiView(ttk.Frame):
             record = save_calculation_record("Module 1 (Tab 1) - Bù công suất phản kháng", inputs, results, equipment)
             self.hien_thi_ket_qua(record)
         except ValueError as e:
-            messagebox.showerror("Lỗi nhập liệu / Logic", str(e))
+            messagebox.showerror("Lỗi nhập liệu", str(e))
 
     def xu_ly_tab_2(self):
         try:

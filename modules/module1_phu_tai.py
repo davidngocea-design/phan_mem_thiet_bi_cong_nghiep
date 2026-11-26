@@ -2,8 +2,8 @@
 File: modules/module1_phu_tai.py
 Chức năng: MODULE 1 - TÍNH TOÁN PHỤ TẢI & ĐỀ XUẤT THIẾT BỊ ĐÓNG CẮT / BÙ CÔNG SUẤT
 Gồm 2 bài toán tương ứng với 2 Tab:
-  - Tab 1 (Thành viên 1): Mạch 1 Pha & Tính Bù Công Suất Phản Kháng (Nâng cosφ) -> Đề xuất Tụ bù + CB.
-  - Tab 2 (Thành viên 2): Động Cơ Không Đồng Bộ 3 Pha -> Đề xuất Contactor + Rơ le nhiệt.
+  - Tab 1: Mạch 1 Pha & Tính Bù Công Suất Phản Kháng (Nâng cosφ) -> Đề xuất Tụ bù + CB.
+  - Tab 2: Động Cơ Không Đồng Bộ 3 Pha -> Đề xuất Contactor + Rơ le nhiệt.
 """
 
 import math
@@ -11,16 +11,16 @@ from utils.history import load_catalog
 
 
 # ==============================================================================
-# TAB 1 (THÀNH VIÊN 1): MẠCH 1 PHA & BÙ CÔNG SUẤT PHẢN KHÁNG (cosφ)
+# TAB 1: MẠCH 1 PHA & BÙ CÔNG SUẤT PHẢN KHÁNG (cosφ)
 # ==============================================================================
 def tinh_phu_tai_1_pha_va_tu_bu(p_kw, u_v, cos_phi_1, cos_phi_2, f_hz=50.0):
     """
     Tính dòng điện, công suất Q, S của tải 1 pha và dung lượng tụ bù Qc cần thiết
-    để nâng hệ số công suất từ cos_phi_1 lên cos_phi_2.
+    để nâng hệ số công suất từ cos_phi_1 lên cos_phi_2. 
     """
     if cos_phi_2 <= cos_phi_1:
         raise ValueError(
-            f"Lỗi logic: Hệ số cosφ mục tiêu ({cos_phi_2}) phải lớn hơn cosφ ban đầu ({cos_phi_1})!"
+            f"Hệ số cosφ mục tiêu ({cos_phi_2}) phải lớn hơn cosφ ban đầu ({cos_phi_1})!"
         )
 
     # 1. Tính thông số phụ tải 1 pha trước khi bù
@@ -56,7 +56,7 @@ def tinh_phu_tai_1_pha_va_tu_bu(p_kw, u_v, cos_phi_1, cos_phi_2, f_hz=50.0):
         de_xuat_tu = f"Ghép song song {so_bo_50} bộ tụ 50 kVAR (Tổng {so_bo_50 * 50} kVAR)"
         dong_tu_a = (q_bu_kvar * 1000.0) / u_v
 
-    # Chọn CB bảo vệ tụ bù: I_CB >= 1.5 * I_tụ (chịu dòng xung nạp tụ và sóng hài)
+    # Chọn CB bảo vệ tụ bù: I_CB >= 1.5 * I_tụ 
     dong_cb_yeu_cau = 1.5 * dong_tu_a
     cb_chon = None
     for cb in ds_mccb:
@@ -84,7 +84,7 @@ def tinh_phu_tai_1_pha_va_tu_bu(p_kw, u_v, cos_phi_1, cos_phi_2, f_hz=50.0):
 
 
 # ==============================================================================
-# TAB 2 (THÀNH VIÊN 2): ĐỘNG CƠ KHÔNG ĐỒNG BỘ 3 PHA & CHỌN KHỞI ĐỘNG TỪ
+# TAB 2: ĐỘNG CƠ KHÔNG ĐỒNG BỘ 3 PHA & CHỌN KHỞI ĐỘNG TỪ
 # ==============================================================================
 def tinh_dong_co_3_pha_va_khoi_dong_tu(p_kw, u_day, f_hz, so_doi_cuc_p, n_thuc_te, cos_phi, hieu_suat):
     """
@@ -96,7 +96,7 @@ def tinh_dong_co_3_pha_va_khoi_dong_tu(p_kw, u_day, f_hz, so_doi_cuc_p, n_thuc_t
     # Lớp bảo vệ vật lý: Tốc độ rô-to thực tế phải nhỏ hơn tốc độ từ trường quay đồng bộ
     if n_thuc_te >= n_dong_bo:
         raise ValueError(
-            f"Lỗi vật lý: Tốc độ quay thực tế n ({n_thuc_te} vòng/phút) "
+            f"Tốc độ quay thực tế n ({n_thuc_te} vòng/phút) "
             f"phải nhỏ hơn tốc độ đồng bộ ns ({n_dong_bo:.0f} vòng/phút)!"
         )
 

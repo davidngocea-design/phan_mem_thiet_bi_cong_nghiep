@@ -44,8 +44,6 @@ def save_calculation_record(module_name, inputs, results, equipment):
     }
 
     history.insert(0, record)
-    history = history[:30]
-
     with open(HISTORY_FILE, "w", encoding="utf-8") as f:
         json.dump(history, f, ensure_ascii=False, indent=2)
 

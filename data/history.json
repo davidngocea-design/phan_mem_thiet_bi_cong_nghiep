@@ -1,6 +1,6 @@
 [
   {
-    "Thời gian": "18/11/2026 17:33:40",
+    "Thời gian": "24/11/2026 17:56:08",
     "Tên bài toán": "Module 1 (Tab 1) - Bù công suất phản kháng",
     "Thông số đầu vào": {
       "Công suất tác dụng P": "50.0 kW",
@@ -17,6 +17,224 @@
     "Đề xuất thiết bị công nghiệp": {
       "Tụ bù công suất phản kháng": "Tụ bù công nghiệp 40 kVAR (Yêu cầu tính toán: 34.58 kVAR)",
       "Aptomat bảo vệ nhánh tụ bù": "Aptomat MCCB 315 A (Chọn theo hệ số 1.5 × Itụ = 272.7 A)"
+    }
+  },
+  {
+    "Thời gian": "24/11/2026 10:03:16",
+    "Tên bài toán": "Module 1 (Tab 1) - Bù công suất phản kháng",
+    "Thông số đầu vào": {
+      "Công suất tác dụng P": "50.0 kW",
+      "Điện áp lưới U": "220.0 V (50 Hz)",
+      "Hệ số cosφ trước -> sau bù": "0.7 -> 0.9"
+    },
+    "Kết quả tính toán": {
+      "Dòng điện tải 1 pha trước bù (I1)": "324.68 A",
+      "Công suất biểu kiến (S1) / Phản kháng (Q1)": "S1 = 71.43 kVA  |  Q1 = 51.01 kVAR",
+      "Dung lượng phản kháng cần bù (Qc)": "26.79 kVAR",
+      "Điện dung tụ bù tương đương (C)": "1762.15 µF",
+      "Dòng điện định mức của nhánh tụ (Ic)": "136.36 A"
+    },
+    "Đề xuất thiết bị công nghiệp": {
+      "Tụ bù công suất phản kháng": "Tụ bù công nghiệp 30 kVAR (Yêu cầu tính toán: 26.79 kVAR)",
+      "Aptomat bảo vệ nhánh tụ bù": "Aptomat MCCB 250 A (Chọn theo hệ số 1.5 × Itụ = 204.5 A)"
+    }
+  },
+  {
+    "Thời gian": "24/11/2026 01:37:22",
+    "Tên bài toán": "Module 1 (Tab 1) - Bù công suất phản kháng",
+    "Thông số đầu vào": {
+      "Công suất tác dụng P": "50.0 kW",
+      "Điện áp lưới U": "250.0 V (50 Hz)",
+      "Hệ số cosφ trước -> sau bù": "0.7 -> 0.95"
+    },
+    "Kết quả tính toán": {
+      "Dòng điện tải 1 pha trước bù (I1)": "285.71 A",
+      "Công suất biểu kiến (S1) / Phản kháng (Q1)": "S1 = 71.43 kVA  |  Q1 = 51.01 kVAR",
+      "Dung lượng phản kháng cần bù (Qc)": "34.58 kVAR",
+      "Điện dung tụ bù tương đương (C)": "1760.94 µF",
+      "Dòng điện định mức của nhánh tụ (Ic)": "160.00 A"
+    },
+    "Đề xuất thiết bị công nghiệp": {
+      "Tụ bù công suất phản kháng": "Tụ bù công nghiệp 40 kVAR (Yêu cầu tính toán: 34.58 kVAR)",
+      "Aptomat bảo vệ nhánh tụ bù": "Aptomat MCCB 250 A (Chọn theo hệ số 1.5 × Itụ = 240.0 A)"
+    }
+  },
+  {
+    "Thời gian": "24/11/2026 01:26:12",
+    "Tên bài toán": "Module 1 (Tab 2) - Động cơ KĐB 3 pha",
+    "Thông số đầu vào": {
+      "Công suất định mức P": "11.0 kW (Ud = 380.0 V, f = 50.0 Hz)",
+      "Số đôi cực & Tốc độ quay": "p = 2 đôi cực, n = 1450.0 vòng/phút",
+      "Hệ số cosφ & Hiệu suất η": "cosφ = 0.85, η = 0.89"
+    },
+    "Kết quả tính toán": {
+      "Tốc độ từ trường đồng bộ (ns)": "1500 vòng/phút",
+      "Hệ số trượt tốc độ (s%)": "3.33 %",
+      "Mô-men xoắn định mức trên trục (M)": "72.45 N.m",
+      "Công suất điện tiêu thụ (P1 = P/η)": "12.36 kW",
+      "Dòng điện định mức động cơ (Iđm)": "22.09 A"
+    },
+    "Đề xuất thiết bị công nghiệp": {
+      "Contactor điều khiển (I >= 1.25 × Iđm)": "LC1D32 (32A)",
+      "Rơ le nhiệt bảo vệ quá tải": "LRD22 (16 - 24A)"
+    }
+  },
+  {
+    "Thời gian": "24/11/2026 01:26:04",
+    "Tên bài toán": " Tính ngắn mạch & Chọn CB",
+    "Thông số đầu vào": {
+      "Điện áp pha Up": "220.0 V",
+      "Tổng trở ngắn mạch ZΣ": "0.045 Ω",
+      "Dòng tải làm việc Itt": "18.5 A"
+    },
+    "Kết quả tính toán": {
+      "Dòng điện ngắn mạch (A)": "4888.89 A",
+      "Dòng điện ngắn mạch Ink (kA)": "4.889 kA",
+      "Dòng định mức CB tối thiểu (1.25 × Itt)": "23.12 A"
+    },
+    "Đề xuất thiết bị công nghiệp": {
+      "Thiết bị đóng cắt đề xuất (CB)": "Aptomat MCB 25 A (Yêu cầu >= 1.25 × Itt = 23.12 A)",
+      "Khả năng cắt ngắn mạch (Icu)": "Chuẩn dòng cắt Icu = 6.0 kA (Lớn hơn dòng ngắn mạch Ink = 4.89 kA)"
+    }
+  },
+  {
+    "Thời gian": "24/11/2026 01:26:02",
+    "Tên bài toán": " Chọn cáp & Sụt áp",
+    "Thông số đầu vào": {
+      "Hệ thống & Vật liệu": "3 Pha (380V) - Cáp Đồng",
+      "Thông số phụ tải": "P = 35.0 kW, U = 380.0 V, cosφ = 0.85",
+      "Chiều dài tuyến cáp": "L = 250.0 m"
+    },
+    "Kết quả tính toán": {
+      "Hệ thống đường dây": "3 Pha (380V) - Ruột dẫn Đồng",
+      "Dòng điện tính toán (Itt)": "62.56 A",
+      "Dòng yêu cầu bảo vệ (1.25 × Itt)": "78.20 A",
+      "Độ sụt áp trên cáp đã chọn (ΔU)": "15.84 V (4.17 %)",
+      "Số bước lặp kiểm tra tiết diện": "2 bước"
+    },
+    "Đề xuất thiết bị công nghiệp": {
+      "Aptomat bảo vệ đầu tuyến (MCCB)": "MCCB 80 A",
+      "Cáp điện lực đề xuất": "Cáp Đồng tiết diện 25.0 mm² (Icp = 108 A, Sụt áp = 4.17%)"
+    }
+  },
+  {
+    "Thời gian": "23/11/2026 23:53:16",
+    "Tên bài toán": "Module 1 (Tab 1) - Bù công suất phản kháng",
+    "Thông số đầu vào": {
+      "Công suất tác dụng P": "50.0 kW",
+      "Điện áp lưới U": "220.0 V (50 Hz)",
+      "Hệ số cosφ trước -> sau bù": "0.7 -> 0.95"
+    },
+    "Kết quả tính toán": {
+      "Dòng điện tải 1 pha trước bù (I1)": "324.68 A",
+      "Công suất biểu kiến (S1) / Phản kháng (Q1)": "S1 = 71.43 kVA  |  Q1 = 51.01 kVAR",
+      "Dung lượng phản kháng cần bù (Qc)": "34.58 kVAR",
+      "Điện dung tụ bù tương đương (C)": "2273.94 µF",
+      "Dòng điện định mức của nhánh tụ (Ic)": "181.82 A"
+    },
+    "Đề xuất thiết bị công nghiệp": {
+      "Tụ bù công suất phản kháng": "Tụ bù công nghiệp 40 kVAR (Yêu cầu tính toán: 34.58 kVAR)",
+      "Aptomat bảo vệ nhánh tụ bù": "Aptomat MCCB 315 A (Chọn theo hệ số 1.5 × Itụ = 272.7 A)"
+    }
+  },
+  {
+    "Thời gian": "23/11/2026 19:21:35",
+    "Tên bài toán": "Module 1 (Tab 2) - Động cơ KĐB 3 pha",
+    "Thông số đầu vào": {
+      "Công suất định mức P": "11.0 kW (Ud = 380.0 V, f = 50.0 Hz)",
+      "Số đôi cực & Tốc độ quay": "p = 2 đôi cực, n = 1450.0 vòng/phút",
+      "Hệ số cosφ & Hiệu suất η": "cosφ = 0.85, η = 0.89"
+    },
+    "Kết quả tính toán": {
+      "Tốc độ từ trường đồng bộ (ns)": "1500 vòng/phút",
+      "Hệ số trượt tốc độ (s%)": "3.33 %",
+      "Mô-men xoắn định mức trên trục (M)": "72.45 N.m",
+      "Công suất điện tiêu thụ (P1 = P/η)": "12.36 kW",
+      "Dòng điện định mức động cơ (Iđm)": "22.09 A"
+    },
+    "Đề xuất thiết bị công nghiệp": {
+      "Contactor điều khiển (I >= 1.25 × Iđm)": "LC1D32 (32A)",
+      "Rơ le nhiệt bảo vệ quá tải": "LRD22 (16 - 24A)"
+    }
+  },
+  {
+    "Thời gian": "23/11/2026 19:21:33",
+    "Tên bài toán": " Chọn cáp & Sụt áp",
+    "Thông số đầu vào": {
+      "Hệ thống & Vật liệu": "3 Pha (380V) - Cáp Đồng",
+      "Thông số phụ tải": "P = 11.0 kW, U = 380.0 V, cosφ = 0.85",
+      "Chiều dài tuyến cáp": "L = 250.0 m"
+    },
+    "Kết quả tính toán": {
+      "Hệ thống đường dây": "3 Pha (380V) - Ruột dẫn Đồng",
+      "Dòng điện tính toán (Itt)": "19.66 A",
+      "Dòng yêu cầu bảo vệ (1.25 × Itt)": "24.58 A",
+      "Độ sụt áp trên cáp đã chọn (ΔU)": "12.45 V (3.28 %)",
+      "Số bước lặp kiểm tra tiết diện": "4 bước"
+    },
+    "Đề xuất thiết bị công nghiệp": {
+      "Aptomat bảo vệ đầu tuyến (MCCB)": "MCCB 25 A",
+      "Cáp điện lực đề xuất": "Cáp Đồng tiết diện 10.0 mm² (Icp = 61 A, Sụt áp = 3.28%)"
+    }
+  },
+  {
+    "Thời gian": "23/11/2026 19:08:57",
+    "Tên bài toán": "Module 1 (Tab 1) - Bù công suất phản kháng",
+    "Thông số đầu vào": {
+      "Công suất tác dụng P": "50.0 kW",
+      "Điện áp lưới U": "220.0 V (50 Hz)",
+      "Hệ số cosφ trước -> sau bù": "0.7 -> 0.9"
+    },
+    "Kết quả tính toán": {
+      "Dòng điện tải 1 pha trước bù (I1)": "324.68 A",
+      "Công suất biểu kiến (S1) / Phản kháng (Q1)": "S1 = 71.43 kVA  |  Q1 = 51.01 kVAR",
+      "Dung lượng phản kháng cần bù (Qc)": "26.79 kVAR",
+      "Điện dung tụ bù tương đương (C)": "1762.15 µF",
+      "Dòng điện định mức của nhánh tụ (Ic)": "136.36 A"
+    },
+    "Đề xuất thiết bị công nghiệp": {
+      "Tụ bù công suất phản kháng": "Tụ bù công nghiệp 30 kVAR (Yêu cầu tính toán: 26.79 kVAR)",
+      "Aptomat bảo vệ nhánh tụ bù": "Aptomat MCCB 250 A (Chọn theo hệ số 1.5 × Itụ = 204.5 A)"
+    }
+  },
+  {
+    "Thời gian": "23/11/2026 19:08:49",
+    "Tên bài toán": "Module 1 (Tab 1) - Bù công suất phản kháng",
+    "Thông số đầu vào": {
+      "Công suất tác dụng P": "0.5 kW",
+      "Điện áp lưới U": "220.0 V (50 Hz)",
+      "Hệ số cosφ trước -> sau bù": "0.7 -> 0.9"
+    },
+    "Kết quả tính toán": {
+      "Dòng điện tải 1 pha trước bù (I1)": "3.25 A",
+      "Công suất biểu kiến (S1) / Phản kháng (Q1)": "S1 = 0.71 kVA  |  Q1 = 0.51 kVAR",
+      "Dung lượng phản kháng cần bù (Qc)": "0.27 kVAR",
+      "Điện dung tụ bù tương đương (C)": "17.62 µF",
+      "Dòng điện định mức của nhánh tụ (Ic)": "22.73 A"
+    },
+    "Đề xuất thiết bị công nghiệp": {
+      "Tụ bù công suất phản kháng": "Tụ bù công nghiệp 5 kVAR (Yêu cầu tính toán: 0.27 kVAR)",
+      "Aptomat bảo vệ nhánh tụ bù": "Aptomat MCCB 40 A (Chọn theo hệ số 1.5 × Itụ = 34.1 A)"
+    }
+  },
+  {
+    "Thời gian": "23/11/2026 17:59:43",
+    "Tên bài toán": "Module 1 (Tab 1) - Bù công suất phản kháng",
+    "Thông số đầu vào": {
+      "Công suất tác dụng P": "50.0 kW",
+      "Điện áp lưới U": "220.0 V (50 Hz)",
+      "Hệ số cosφ trước -> sau bù": "0.7 -> 0.9"
+    },
+    "Kết quả tính toán": {
+      "Dòng điện tải 1 pha trước bù (I1)": "324.68 A",
+      "Công suất biểu kiến (S1) / Phản kháng (Q1)": "S1 = 71.43 kVA  |  Q1 = 51.01 kVAR",
+      "Dung lượng phản kháng cần bù (Qc)": "26.79 kVAR",
+      "Điện dung tụ bù tương đương (C)": "1762.15 µF",
+      "Dòng điện định mức của nhánh tụ (Ic)": "136.36 A"
+    },
+    "Đề xuất thiết bị công nghiệp": {
+      "Tụ bù công suất phản kháng": "Tụ bù công nghiệp 30 kVAR (Yêu cầu tính toán: 26.79 kVAR)",
+      "Aptomat bảo vệ nhánh tụ bù": "Aptomat MCCB 250 A (Chọn theo hệ số 1.5 × Itụ = 204.5 A)"
     }
   }
 ]

@@ -2,8 +2,8 @@
 File: modules/module2_truyen_tai_bao_ve.py
 Chức năng: MODULE 2 - TÍNH TOÁN TRUYỀN TẢI & ĐỀ XUẤT THIẾT BỊ BẢO VỆ
 Gồm 2 bài toán tương ứng với 2 Tab:
-  - Tab 1 (Thành viên 3): Chọn Cáp Điện & Vòng Lặp Kiểm Tra Sụt Áp (ΔU% <= 5%) -> Đề xuất Cáp & MCCB tổng.
-  - Tab 2 (Thành viên 4): Tính Ngắn Mạch & Chọn Thiết Bị Đóng Cắt -> Đề xuất MCB/MCCB theo Iđm và dòng cắt Icu.
+  - Tab 1: Chọn Cáp Điện & Vòng Lặp Kiểm Tra Sụt Áp (ΔU% <= 5%) -> Đề xuất Cáp & MCCB tổng.
+  - Tab 2: Tính Ngắn Mạch & Chọn Thiết Bị Đóng Cắt -> Đề xuất MCB/MCCB theo Iđm và dòng cắt Icu.
 """
 
 import math
@@ -11,7 +11,7 @@ from utils.history import load_catalog
 
 
 # ==============================================================================
-# TAB 1 (THÀNH VIÊN 3): CHỌN CÁP ĐIỆN & VÒNG LẶP KIỂM TRA SỤT ÁP (ΔU% <= 5%)
+# TAB 1: CHỌN CÁP ĐIỆN & VÒNG LẶP KIỂM TRA SỤT ÁP (ΔU% <= 5%)
 # ==============================================================================
 def tinh_chon_cap_va_sut_ap(p_kw, u_v, cos_phi, chieu_dai_m, he_dien="3 Pha (380V)", vat_lieu="Đồng"):
     """
@@ -121,7 +121,7 @@ def tinh_chon_cap_va_sut_ap(p_kw, u_v, cos_phi, chieu_dai_m, he_dien="3 Pha (380
 
 
 # ==============================================================================
-# TAB 2 (THÀNH VIÊN 4): TÍNH NGẮN MẠCH & ĐỀ XUẤT THIẾT BỊ ĐÓNG CẮT (MCB / MCCB)
+# TAB 2: TÍNH NGẮN MẠCH & ĐỀ XUẤT THIẾT BỊ ĐÓNG CẮT (MCB / MCCB)
 # ==============================================================================
 def tinh_ngan_mach_va_chon_cb(u_pha, z_ngan_mach, i_tai):
     """

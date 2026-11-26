@@ -1,9 +1,9 @@
 """
 File chính: main.py
 Tên đề tài: PHẦN MỀM TÍNH TOÁN VÀ ĐỀ XUẤT CÁC THIẾT BỊ CÔNG NGHIỆP
-Cấu trúc: 2 Module chính x 2 Tab/Module = 4 Tab (Phân công đều cho 4 thành viên)
-  - Module 1: Tính toán Phụ tải (Tab 1: Tụ bù cosφ | Tab 2: Động cơ 3 pha & Khởi động từ)
-  - Module 2: Truyền tải & Bảo vệ (Tab 1: Chọn cáp & Sụt áp | Tab 2: Ngắn mạch & Chọn CB)
+Cấu trúc: 2 Module chính x 2 Tab
+  - Module 1: Tính toán Phụ tải 
+  - Module 2: Truyền tải & Bảo vệ
 """
 
 import os
@@ -37,14 +37,14 @@ class IndustrialDeviceApp(tk.Tk):
         self.chuyen_module("mod1")
 
     def tao_bo_cuc_chinh(self):
-        # 1. Thanh điều hướng bên trái (Sidebar gồm 2 Module chính)
+        # 1. Thanh điều hướng bên trái
         sidebar = tk.Frame(self, bg="#0f172a", width=250)
         sidebar.pack(side="left", fill="y")
         sidebar.pack_propagate(False)
 
         lbl_logo = tk.Label(
             sidebar,
-            text="⚡ THIẾT BỊ CÔNG NGHIỆP\nTÍNH TOÁN & ĐỀ XUẤT",
+            text="⚡ TÍNH TOÁN & ĐỀ XUẤT\nTHIẾT BỊ CÔNG NGHIỆP",
             bg="#0c1222", fg="#38bdf8",
             font=("Arial", 12, "bold"), pady=20
         )
@@ -52,8 +52,8 @@ class IndustrialDeviceApp(tk.Tk):
 
         self.nav_buttons = {}
         ds_module = [
-            ("mod1", "1. Tính Toán Phụ Tải\n   (Tụ Bù & Động Cơ 3 Pha)"),
-            ("mod2", "2. Truyền Tải & Bảo Vệ\n   (Cáp Điện & Ngắn Mạch CB)")
+            ("mod1", "1. Tính Toán Phụ Tải"),
+            ("mod2", "2. Truyền Tải & Bảo Vệ")
         ]
 
         for ma_mod, ten_nut in ds_module:
@@ -67,7 +67,7 @@ class IndustrialDeviceApp(tk.Tk):
             self.nav_buttons[ma_mod] = btn
 
         btn_export = tk.Button(
-            sidebar, text="📄 Xuất Báo Cáo (.TXT/.CSV)",
+            sidebar, text="Xuất Báo Cáo",
             bg="#059669", fg="white", font=("Arial", 10, "bold"),
             pady=10, relief="flat", cursor="hand2",
             command=self.xuat_bao_cao

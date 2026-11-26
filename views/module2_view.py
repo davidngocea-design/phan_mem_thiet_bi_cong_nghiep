@@ -1,8 +1,8 @@
 """
 File: views/module2_view.py
 Chức năng: Giao diện MODULE 2 - TRUYỀN TẢI & BẢO VỆ CÔNG NGHIỆP (Gồm đúng 2 Tab):
-  - Tab 1 (Thành viên 3): Chọn Cáp Điện & Vòng Lặp Kiểm Tra Sụt Áp (ΔU% <= 5%)
-  - Tab 2 (Thành viên 4): Tính Ngắn Mạch & Đề Xuất Thiết Bị Đóng Cắt (MCB / MCCB)
+  - Chọn Cáp Điện & Vòng Lặp Kiểm Tra Sụt Áp (ΔU% <= 5%)
+  - Tính Ngắn Mạch & Đề Xuất Thiết Bị Đóng Cắt (MCB / MCCB)
 """
 
 import tkinter as tk
@@ -36,8 +36,8 @@ class Module2TruyenTaiView(ttk.Frame):
         self.tab1 = ttk.Frame(self.notebook, padding=10)
         self.tab2 = ttk.Frame(self.notebook, padding=10)
 
-        self.notebook.add(self.tab1, text=" Tab 1 (TV3): Chọn Cáp Điện & Vòng Lặp Sụt Áp (ΔU% <= 5%) ")
-        self.notebook.add(self.tab2, text=" Tab 2 (TV4): Tính Ngắn Mạch & Đề Xuất CB Bảo Vệ ")
+        self.notebook.add(self.tab1, text=" Chọn Cáp Điện & Vòng Lặp Sụt Áp ")
+        self.notebook.add(self.tab2, text=" Tính Ngắn Mạch ")
 
         self.dung_tab_1()
         self.dung_tab_2()
@@ -177,7 +177,7 @@ class Module2TruyenTaiView(ttk.Frame):
                 "Thông số phụ tải": f"P = {p_kw} kW, U = {u_v} V, cosφ = {cos_phi}",
                 "Chiều dài tuyến cáp": f"L = {l_m} m"
             }
-            record = save_calculation_record("Module 2 (Tab 1) - Chọn cáp & Sụt áp", inputs, results, equipment)
+            record = save_calculation_record(" Chọn cáp & Sụt áp", inputs, results, equipment)
             self.hien_thi_ket_qua(record)
         except ValueError as e:
             messagebox.showerror("Lỗi nhập liệu", str(e))
@@ -194,7 +194,7 @@ class Module2TruyenTaiView(ttk.Frame):
                 "Tổng trở ngắn mạch ZΣ": f"{z_total} Ω",
                 "Dòng tải làm việc Itt": f"{itt} A"
             }
-            record = save_calculation_record("Module 2 (Tab 2) - Ngắn mạch & Chọn CB", inputs, results, equipment)
+            record = save_calculation_record(" Tính ngắn mạch & Chọn CB", inputs, results, equipment)
             self.hien_thi_ket_qua(record)
         except ValueError as e:
             messagebox.showerror("Lỗi nhập liệu", str(e))
